@@ -1,12 +1,12 @@
 <div align="center">
   <a href="https://mit.edu/sparklab/">
-    <img align="left" src="images/spark_logo.png" width="100" alt="sparklab">
+    <img align="left" src="images/spark_logo.png" height="80" alt="sparklab">
   </a>
   <a href="https://mit.edu">
-    <img align="center" src="images/mit_logo.png" width="100" alt="mit">
+    <img align="center" src="images/mit_logo.png" height="80" alt="mit">
   </a>
   <a href="http://acl.mit.edu/">
-    <img align="right" src="images/acl_logo.png" width="100" alt="acl">
+    <img align="right" src="images/acl_logo.jpeg" height="80" alt="acl">
   </a>
 </div>
 
