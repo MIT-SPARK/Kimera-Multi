@@ -23,7 +23,30 @@ and (iii) builds a globally consistent metric-semantic 3D mesh model of the envi
     </a>
 </p>
 
+**Note**
+The individual repositories the system use might not be online yet. The complete system will be online by X/X/XXXX.
+
 ## Installation
+
+**Note**
+The installation has only been tested on a team of robots with Ubuntu 18.04 and ROS Melodic.
+```
+# Create workspace
+mkdir -p catkin_ws/src
+cd catkin_ws/src/
+git clone git@github.com:MIT-SPARK/Kimera-Multi.git kimera_multi
+
+# If you do not have these dependencies already
+sudo bash kimera_multi/install/dependencies.sh
+
+# For full install
+vcs import . --input kimera_multi/repos/kimera_multi.repos --recursive
+
+cd ..
+# Configure build options and build!
+catkin config -a --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DGTSAM_TANGENT_PREINTEGRATION=OFF -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF -DOPENGV_BUILD_WITH_MARCH_NATIVE=OFF
+catkin build --continue -s
+```
 
 ## Examples & Usage
 
