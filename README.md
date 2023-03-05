@@ -11,6 +11,8 @@
 </div>
 
 # Kimera-Multi
+>**Note**
+>The individual repositories of the system might either be not yet online, or the updated changes has not yet been made public. Preparing these repositories and adding examples is ongoing. The tentative available date for the complete system is April 5th, 2023.
 
 Kimera-Multi is a multi-robot system that 
 (i) is robust and capable of identifying and rejecting incorrect inter and intra-robot loop closures resulting from perceptual aliasing, 
@@ -22,9 +24,6 @@ and (iii) builds a globally consistent metric-semantic 3D mesh model of the envi
     <img src="images/kimera_multi.png" alt="Kimera-Multi">
     </a>
 </p>
-
-**Note**
-The individual repositories the system use might not be online yet. The complete system will be online by X/X/XXXX.
 
 ## Installation
 
@@ -90,5 +89,4 @@ If you found Kimera-Multi to be useful, we would really appreciate if you could 
 We have also released some [real-life datasets](https://github.com/MIT-SPARK/Kimera-Multi-Data) collected on 8 robots on the MIT campus.
 
 ## Acknowledgements
-
-## License
+Kimera-Multi was supported in part by ARL [DCIST](https://www.dcist.org), [ONR](https://www.nre.navy.mil/), and [MathWorks](https://www.mathworks.com/).
