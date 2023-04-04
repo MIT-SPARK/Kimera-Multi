@@ -48,6 +48,29 @@ catkin config -a --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DGTSAM_TANGENT_
 catkin build --continue -s
 ```
 
+## System Architecture & Breakdown
+<p align="center">
+    <a href="https://arxiv.org/abs/2106.14386">
+    <img src="images/system_arch.png" alt="Kimera-Multi System">
+    </a>
+</p>
+
+For more in depth details about the system, we point the reader to our [paper](https://arxiv.org/abs/2106.14386).
+Each robot runs an onboard system using the Robot Operating System (ROS). 
+Inter-robot communication is performed in a fully peer-to-peer manner using a lightweight communication layer on top of the UDP protocol using the Remote Topic Manager. 
+Kimera-VIO and Kimera-Semantics provide the odometric pose estimates and a reconstructed 3D mesh. 
+The distributed front-end detects inter-robot loop closures by communicating visual Bag-of-Words (BoW) vectors and selected keyframes that contain keypoints and descriptors for geometric verification. 
+The front-end is also responsible for incorporating the odometry and loop closures into a coarsened pose graph. 
+The distributed back-end periodically optimizes the coarse pose graph using robust distributed optimization. Lastly, the optimized trajectory is used by each robot to correct its local 3D mesh.
+
+### Module-to-Repository Directory
+- [Kimera-Semantics](https://github.com/MIT-SPARK/Kimera-Semantics)
+- [Kimera-VIO](https://github.com/MIT-SPARK/Kimera-VIO)
+- Distributed Front-End: [Kimera-Distributed](https://github.com/MIT-SPARK/Kimera-Distributed) which handles the communication protocol and pose graph coarsening and [Kimera-Multi-LCD](https://github.com/MIT-SPARK/Kimera-Multi-LCD) which contains the functionalities for Bag-of-Words matching and keyframe registration.
+- Remote Topic Manager: Coming Soon (Still in approval process).
+- Robust Distributed PGO: [DPGO](https://github.com/mit-acl/dpgo) and [DPGO-ROS](https://github.com/mit-acl/dpgo_ros).
+- Local Mesh Optimization: [Kimera-PGMO](https://github.com/MIT-SPARK/Kimera-PGMO).
+
 ## Examples & Usage
 
 To test Kimera-Multi on a single machine, we provided an example in the examples folder.
