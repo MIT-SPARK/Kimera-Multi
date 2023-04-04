@@ -50,6 +50,14 @@ catkin build --continue -s
 
 ## Examples & Usage
 
+To test Kimera-Multi on a single machine, we provided an example in the examples folder.
+First, install [tmuxp](https://github.com/tmux-python/tmuxp),
+then, download the [Campus-Outdoor data](https://github.com/MIT-SPARK/Kimera-Multi-Data).
+Lastly, run launch all the processes for all 6 robots using the command below:
+```bash
+CATKIN_WS=<path-to-catkin-ws> DATA_PATH=<path-to-campus-outdoor-data-folder> LOG_DIR=/home/yunchang/logs/kimera_distributed_10_14 tmuxp load 1014-example.yaml
+```
+
 ## Citation
 
 If you found Kimera-Multi to be useful, we would really appreciate if you could cite our work:
