@@ -41,8 +41,12 @@ repositories:
     version: master
   gtsam:
     type: git
-    url: git@github.com:yunzc/gtsam.git
-    version: feature/gnc_base_params
+    url: git@github.com:borglab/gtsam.git
+    version: 4.2a7
+  image_pipeline:
+    type: git
+    url: git@github.com:yunzc/image_pipeline.git
+    version: kimera
   image_undistort:
     type: git
     url: git@github.com:ethz-asl/image_undistort.git
@@ -74,7 +78,7 @@ repositories:
   kimera_semantics:
     type: git
     url: git@github.com:MIT-SPARK/Kimera-Semantics.git
-    version: master
+    version: feature/noetic_fixes
   kimera_vio:
     type: git
     url: git@github.com:MIT-SPARK/Kimera-VIO.git
@@ -94,6 +98,10 @@ repositories:
   minkindr_ros:
     type: git
     url: git@github.com:ethz-asl/minkindr_ros.git
+    version: master
+  numpy_eigen:
+    type: git
+    url: git@github.com:ethz-asl/numpy_eigen.git
     version: master
   opencv3_catkin:
     type: git
@@ -118,4 +126,4 @@ repositories:
   voxblox:
     type: git
     url: git@github.com:MIT-SPARK/voxblox.git
-    version: master
+    version: feature/hydra
