@@ -40,7 +40,7 @@ git clone git@github.com:MIT-SPARK/Kimera-Multi.git kimera_multi
 sudo bash kimera_multi/install/dependencies.sh
 
 # For full install
-vcs import . --input kimera_multi/repos/kimera_multi.repos --recursive
+vcs import . --input kimera_multi/kimera_multi.repos --recursive
 
 cd ..
 # Configure build options and build!
