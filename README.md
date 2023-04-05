@@ -11,8 +11,6 @@
 </div>
 
 # Kimera-Multi
->**Note**
->The individual repositories of the system might either be not yet online, or the updated changes has not yet been made public. Preparing these repositories and adding examples is ongoing. The tentative available date for the complete system is April 5th, 2023.
 
 Kimera-Multi is a multi-robot system that 
 (i) is robust and capable of identifying and rejecting incorrect inter and intra-robot loop closures resulting from perceptual aliasing, 
