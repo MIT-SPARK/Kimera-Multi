@@ -118,6 +118,18 @@ If you found Kimera-Multi to be useful, we would really appreciate if you could 
 
 ```
 
+- [3] Y. Tian, Y. Chang, L. Quang, A. Schang, C. Nieto-Granda, J. P. How, and L. Carlone, "Resilient and Distributed Multi-Robot Visual SLAM: Datasets, Experiments, and Lessons Learned," arXiv preprint arXiv:2304.04362, 2023.
+```bibtex
+@ARTICLE{tian23arxiv_kimeramultiexperiments,
+  author={Yulun Tian and Yun Chang and Long Quang and Arthur Schang and Carlos Nieto-Granda and Jonathan P. How and Luca Carlone},
+  title={Resilient and Distributed Multi-Robot Visual SLAM: Datasets, Experiments, and Lessons Learned},
+  year={2023},
+  eprint={2304.04362},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO}
+}
+```
+
 ## Datasets
 
 We have also released some [real-life datasets](https://github.com/MIT-SPARK/Kimera-Multi-Data) collected on 8 robots on the MIT campus.
