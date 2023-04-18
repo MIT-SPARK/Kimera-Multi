@@ -76,7 +76,7 @@ First, install [tmuxp](https://github.com/tmux-python/tmuxp),
 then, download the [Campus-Outdoor data](https://github.com/MIT-SPARK/Kimera-Multi-Data).
 Lastly, run the following to launch all the processes for all 6 robots:
 ```bash
-CATKIN_WS=<path-to-catkin-ws> DATA_PATH=<path-to-campus-outdoor-data-folder> LOG_DIR=/home/yunchang/logs/kimera_distributed_10_14 tmuxp load 1014-example.yaml
+CATKIN_WS=<path-to-catkin-ws> DATA_PATH=<path-to-campus-outdoor-data-folder> LOG_DIR=<path-to-log-folder> tmuxp load 1014-example.yaml
 ```
 Note that this example only uses a single ROS master, and will most likely not work with intermittent communication.
 To run with separate ROS masters on separate machines, we will need to use the Remote Topic Manager,
