@@ -62,12 +62,12 @@ windows:
     - sleep 5;
 
   panes:
-    - roslaunch kimera_core kimera_vio_jackal.launch robot_name:=$ROBOT0 robot_id:=0 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
-    - roslaunch kimera_core kimera_vio_jackal.launch robot_name:=$ROBOT1 robot_id:=1 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
-    - roslaunch kimera_core kimera_vio_jackal.launch robot_name:=$ROBOT2 robot_id:=2 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
-    - roslaunch kimera_core kimera_vio_jackal.launch robot_name:=$ROBOT3 robot_id:=3 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
-    - roslaunch kimera_core kimera_vio_jackal.launch robot_name:=$ROBOT4 robot_id:=4 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
-    - roslaunch kimera_core kimera_vio_jackal.launch robot_name:=$ROBOT5 robot_id:=5 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
+    - roslaunch kimera_multi kimera_vio_jackal.launch robot_name:=$ROBOT0 robot_id:=0 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
+    - roslaunch kimera_multi kimera_vio_jackal.launch robot_name:=$ROBOT1 robot_id:=1 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
+    - roslaunch kimera_multi kimera_vio_jackal.launch robot_name:=$ROBOT2 robot_id:=2 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
+    - roslaunch kimera_multi kimera_vio_jackal.launch robot_name:=$ROBOT3 robot_id:=3 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
+    - roslaunch kimera_multi kimera_vio_jackal.launch robot_name:=$ROBOT4 robot_id:=4 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
+    - roslaunch kimera_multi kimera_vio_jackal.launch robot_name:=$ROBOT5 robot_id:=5 use_d455:=true multirobot:=true lcd_no_optimize:=true use_external_odom:=true replay:=true should_use_sim_time:=true
 
 - window_name: data
   focus: true  
