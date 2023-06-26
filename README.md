@@ -26,8 +26,8 @@ and (iii) builds a globally consistent metric-semantic 3D mesh model of the envi
 ## Installation
 
 **Note**
-The installation has only been tested on a team of robots with Ubuntu 18.04 and ROS Melodic.
-Testing on Ubuntu 20.04 and ROS Noetic is currently ongoing.
+The experiments described by the authors in the paper were done on Ubuntu 18.04 and ROS Melodic.
+System has also been tested on Ubuntu 20.04 and ROS Noetic.
 ```
 # Create workspace
 mkdir -p catkin_ws/src
