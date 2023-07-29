@@ -42,7 +42,7 @@ repositories:
   gtsam:
     type: git
     url: git@github.com:borglab/gtsam.git
-    version: 4.2a7
+    version: 4.2a9
   image_pipeline:
     type: git
     url: git@github.com:yunzc/image_pipeline.git
@@ -70,7 +70,7 @@ repositories:
   kimera_rpgo:
     type: git
     url: git@github.com:MIT-SPARK/Kimera-RPGO.git
-    version: feature/hydra_multi
+    version: master
   kimera_rviz_markers:
     type: git
     url: git@github.com:ToniRV/kimera_rviz_markers.git
