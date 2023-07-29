@@ -43,10 +43,6 @@ repositories:
     type: git
     url: git@github.com:borglab/gtsam.git
     version: 4.2a9
-  image_pipeline:
-    type: git
-    url: git@github.com:yunzc/image_pipeline.git
-    version: kimera
   image_undistort:
     type: git
     url: git@github.com:ethz-asl/image_undistort.git
@@ -85,7 +81,7 @@ repositories:
     version: feature/prerelease
   mesh_rviz_plugins:
     type: git
-    url: git@github.com:ToniRV/mesh_rviz_plugins.git
+    url: git@github.com:MIT-SPARK/mesh_rviz_plugins.git
     version: master
   mesh_tools:
     type: git
