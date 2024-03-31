@@ -13,7 +13,7 @@ apt-get install -y \
       gfortran
 apt-get install -y libtbb-dev
 apt-get install -y libgflags-dev libgoogle-glog-dev
-apt-get install -y python-wstool python-catkin-tools ros-melodic-cmake-modules protobuf-compiler autoconf
-apt install -y ros-melodic-mesh-tools
-apt install -y ros-melodic-ompl
+apt-get install -y python-wstool python-catkin-tools ros-noetic-cmake-modules protobuf-compiler autoconf
+# apt install -y ros-melodic-mesh-tools
+apt install -y ros-noetic-ompl
 apt-get install -y build-essential cmake-gui libsuitesparse-dev
