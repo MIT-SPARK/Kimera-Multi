@@ -62,7 +62,7 @@ repositories:
   kimera_ros:
     type: git
     url: git@github.com:MIT-SPARK/Kimera-VIO-ROS.git
-    version: feature/prerelease
+    version: master
   kimera_rpgo:
     type: git
     url: git@github.com:MIT-SPARK/Kimera-RPGO.git
