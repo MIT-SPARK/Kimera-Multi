@@ -1,0 +1,125 @@
+repositories:
+  catkin_boost_python_buildtool:
+    type: git
+    url: https://github.com/ethz-asl/catkin_boost_python_buildtool.git
+    version: master
+  catkin_simple:
+    type: git
+    url: https://github.com/catkin/catkin_simple.git
+    version: master
+  cmake_external_project_catkin:
+    type: git
+    url: https://github.com/zurich-eye/cmake_external_project_catkin.git
+    version: master
+  dbow2_catkin:
+    type: git
+    url: https://github.com/MIT-SPARK/dbow2_catkin.git
+    version: master
+  dpgo:
+    type: git
+    url: https://github.com/mit-acl/dpgo.git
+    version: main
+  dpgo_ros:
+    type: git
+    url: https://github.com/mit-acl/dpgo_ros.git
+    version: main
+  eigen_catkin:
+    type: git
+    url: https://github.com/ethz-asl/eigen_catkin.git
+    version: master
+  eigen_checks:
+    type: git
+    url: https://github.com/ethz-asl/eigen_checks.git
+    version: master
+  gflags_catkin:
+    type: git
+    url: https://github.com/ethz-asl/gflags_catkin.git
+    version: master
+  glog_catkin:
+    type: git
+    url: https://github.com/ethz-asl/glog_catkin.git
+    version: master
+  gtsam:
+    type: git
+    url: https://github.com/borglab/gtsam.git
+    version: 4.2a9
+  image_undistort:
+    type: git
+    url: https://github.com/ethz-asl/image_undistort.git
+    version: master
+  kimera_distributed:
+    type: git
+    url: https://github.com/MIT-SPARK/Kimera-Distributed.git
+    version: main
+  kimera_multi_lcd:
+    type: git
+    url: https://github.com/MIT-SPARK/Kimera-Multi-LCD.git
+    version: main
+  kimera_pgmo:
+    type: git
+    url: https://github.com/MIT-SPARK/Kimera-PGMO.git
+    version: master
+  kimera_ros:
+    type: git
+    url: https://github.com/MIT-SPARK/Kimera-VIO-ROS.git
+    version: master
+  kimera_rpgo:
+    type: git
+    url: https://github.com/MIT-SPARK/Kimera-RPGO.git
+    version: master
+  kimera_rviz_markers:
+    type: git
+    url: https://github.com/ToniRV/kimera_rviz_markers.git
+    version: master
+  kimera_semantics:
+    type: git
+    url: https://github.com/MIT-SPARK/Kimera-Semantics.git
+    version: feature/kimera_multi
+  kimera_vio:
+    type: git
+    url: https://github.com/MIT-SPARK/Kimera-VIO.git
+    version: master
+  mesh_rviz_plugins:
+    type: git
+    url: https://github.com/MIT-SPARK/mesh_rviz_plugins.git
+    version: master
+  mesh_tools:
+    type: git
+    url: https://github.com/yunzc/mesh_tools.git
+    version: master
+  minkindr:
+    type: git
+    url: https://github.com/ethz-asl/minkindr.git
+    version: master
+  minkindr_ros:
+    type: git
+    url: https://github.com/ethz-asl/minkindr_ros.git
+    version: master
+  numpy_eigen:
+    type: git
+    url: https://github.com/ethz-asl/numpy_eigen.git
+    version: master
+  opencv3_catkin:
+    type: git
+    url: https://github.com/ethz-asl/opencv3_catkin.git
+    version: master
+  opengv_catkin:
+    type: git
+    url: https://github.com/nathanhhughes/opengv_catkin.git
+    version: fix/march_native_optional
+  pose_graph_tools:
+    type: git
+    url: https://github.com/MIT-SPARK/pose_graph_tools.git
+    version: master
+  protobuf_catkin:
+    type: git
+    url: https://github.com/ethz-asl/protobuf_catkin.git
+    version: master
+  pybind11_catkin:
+    type: git
+    url: https://github.com/ipab-slmc/pybind11_catkin.git
+    version: master
+  voxblox:
+    type: git
+    url: https://github.com/MIT-SPARK/voxblox.git
+    version: feature/hydra

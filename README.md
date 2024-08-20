@@ -83,6 +83,10 @@ To run with separate ROS masters on separate machines, we will need to use the R
 which is currently under-going the approval process for release.
 We will provide an additional example once the module is public.
 
+## Docker
+
+A docker image for deploying Kimera-Multi is also provided. Please refer to the README in the `docker` subdirectory for details.
+
 ## Citation
 
 If you found Kimera-Multi to be useful, we would really appreciate if you could cite our work:
