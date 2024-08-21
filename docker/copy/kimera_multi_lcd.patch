@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 82dee56..104d2f5 100644
+index 82dee56..29d7107 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -19,6 +19,7 @@ find_package(Boost REQUIRED
@@ -10,16 +10,6 @@ index 82dee56..104d2f5 100644
  find_package(GTSAM REQUIRED)
  find_package(opengv REQUIRED)
  find_package(DBoW2 REQUIRED)
-@@ -29,6 +30,9 @@ if(NOT TARGET DBoW2::DBoW2)
-   INTERFACE_INCLUDE_DIRECTORIES "${DBoW2_INCLUDE_DIRS}")
- endif()
- find_package(PCL REQUIRED)
-+message(OpenCV_INCLUDE_DIRS="${OpenCV_INCLUDE_DIRS}")
-+include_directories("/root/volume/catkin_ws/devel/include/opencv")
-+
- 
- configure_file(cmake/json.CMakeLists.txt.in json-download/CMakeLists.txt)
- execute_process(
 diff --git a/package.xml b/package.xml
 index 08e5b8c..c1939c5 100644
 --- a/package.xml
