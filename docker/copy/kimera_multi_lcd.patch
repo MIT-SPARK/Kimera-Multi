@@ -1,0 +1,38 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 82dee56..29d7107 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -19,6 +19,7 @@ find_package(Boost REQUIRED
+   chrono
+ )
+ 
++find_package(OpenCV 4 REQUIRED)
+ find_package(GTSAM REQUIRED)
+ find_package(opengv REQUIRED)
+ find_package(DBoW2 REQUIRED)
+diff --git a/package.xml b/package.xml
+index 08e5b8c..c1939c5 100644
+--- a/package.xml
++++ b/package.xml
+@@ -16,7 +16,7 @@
+   <depend>gtsam</depend>
+   <depend>Eigen</depend>
+   <depend>OpenCV</depend>
+-  <depend>opengv</depend>
++  <depend>opengv_catkin</depend>
+   <depend>roscpp</depend>
+   <depend>std_msgs</depend>
+   <depend>sensor_msgs</depend>
+diff --git a/src/loop_closure_detector.cpp b/src/loop_closure_detector.cpp
+index 7f05fee..e7a860a 100644
+--- a/src/loop_closure_detector.cpp
++++ b/src/loop_closure_detector.cpp
+@@ -44,7 +44,7 @@ void LoopClosureDetector::loadAndInitialize(const LcdParams& params) {
+       new LcdThirdPartyWrapper(params.lcd_tp_params_));
+ 
+   // Initiate orb matcher
+-  orb_feature_matcher_ = cv::DescriptorMatcher::create(3);
++  orb_feature_matcher_ = cv::DescriptorMatcher::create("BruteForce-L1");
+ 
+   // Initialize bag-of-word database
+   vocab_.load(params.vocab_path_);

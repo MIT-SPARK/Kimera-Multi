@@ -1,0 +1,23 @@
+diff --git a/kimera_semantics_ros/CMakeLists.txt b/kimera_semantics_ros/CMakeLists.txt
+index 63b89a6..0b1c0a7 100644
+--- a/kimera_semantics_ros/CMakeLists.txt
++++ b/kimera_semantics_ros/CMakeLists.txt
+@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ set(CMAKE_CXX_EXTENSIONS OFF)
+ 
+ find_package(catkin_simple REQUIRED)
++find_package(OpenCV 3.4.2 EXACT REQUIRED)
+ 
+ catkin_simple()
+ 
+@@ -22,6 +23,10 @@ cs_add_library(${PROJECT_NAME}
+   src/semantic_simulation_server.cpp
+   src/semantic_tsdf_server.cpp
+ )
++message(OpenCV_LIBRARIES="${OpenCV_LIBRARIES}")
++target_link_libraries(${PROJECT_NAME}
++  ${OpenCV_LIBRARIES}
++)
+ 
+ cs_add_executable(kimera_semantics_node
+   src/kimera_semantics_node.cpp
