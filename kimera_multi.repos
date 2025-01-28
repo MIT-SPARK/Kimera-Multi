@@ -58,7 +58,7 @@ repositories:
   kimera_pgmo:
     type: git
     url: git@github.com:MIT-SPARK/Kimera-PGMO.git
-    version: master
+    version: v1.0.0
   kimera_ros:
     type: git
     url: git@github.com:MIT-SPARK/Kimera-VIO-ROS.git
